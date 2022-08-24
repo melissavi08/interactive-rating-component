@@ -1,7 +1,39 @@
+:root {
+  --main-color: #fb7413;
+  --white: #ffffff;
+  --light-medium-color: #959eac;
+  --medium-color: #7c8798;
+  --dark-color: #252d37;
+  --very-dark-color: #121417;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  font-family: "Overpass", sans-serif;
+  color: var(--white);
+  background-color: var(--very-dark-color);
+}
+
+.ratingState {
+  width: 100%;
+  height: 350px;
+  border-radius: 20px;
+  background-color: var(--dark-color);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--main-color);
+  text-decoration: none;
 }

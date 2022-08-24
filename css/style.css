@@ -27,6 +27,7 @@ body {
 
 .ratingState {
   width: 100%;
+  max-width: 350px;
   height: 350px;
   padding: 20px;
   border-radius: 20px;
@@ -34,6 +35,8 @@ body {
 }
 
 .circle {
+  display: grid;
+  place-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -42,8 +45,13 @@ body {
   background-color: var(--medium-color);
 }
 
+.rating span {
+  position: relative;
+  top: 3px;
+}
+
 figure img {
-  width: 20px;
+  width: 15px;
 }
 
 p {
@@ -71,6 +79,7 @@ button {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: var(--main-color);
   text-decoration: none;

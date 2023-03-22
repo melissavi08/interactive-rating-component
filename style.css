@@ -1,8 +1,47 @@
+:root {
+  --primary-color: #fb7413;
+  --very-light-color: #ffffff;
+  --light-color: #959eac;
+  --medium-color: hsl(216, 12%, 55%, 0.2);
+  --dark-color: #252d37;
+  --very-dark-color: #121417;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  min-height: 100vh;
+  font-family: "Overpass", sans-serif;
+  background-color: var(--very-dark-color);
+}
+
+main {
+  width: 100%;
+  max-width: 410px;
+  height: 360px;
+  padding-top: 24px;
+  border-radius: 16px;
+  background-color: var(--dark-color);
+}
+
 .attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
   font-size: 11px;
   text-align: center;
+  color: var(--very-light-color);
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--primary-color);
 }

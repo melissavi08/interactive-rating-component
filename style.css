@@ -25,12 +25,18 @@ body {
 }
 
 main {
+  display: flex;
+  justify-content: center;
   width: 100%;
   max-width: 410px;
   height: 360px;
   padding-top: 24px;
   border-radius: 16px;
   background-color: var(--dark-color);
+}
+
+section {
+  width: 85%;
 }
 
 .circle {
@@ -41,6 +47,26 @@ main {
   height: 40px;
   border-radius: 50%;
   background-color: var(--medium-color);
+}
+
+.rating-state__top {
+  display: grid;
+  gap: 20px;
+}
+
+.rating-state__top-text {
+  display: grid;
+  gap: 12px;
+}
+
+h2 {
+  color: var(--very-light-color);
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: var(--light-color);
 }
 
 .attribution {
@@ -66,5 +92,22 @@ main {
   .circle {
     width: 48px;
     height: 48px;
+  }
+
+  .rating-state__top {
+    gap: 32px;
+  }
+
+  .rating-state__top-text {
+    gap: 8px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6rem;
   }
 }

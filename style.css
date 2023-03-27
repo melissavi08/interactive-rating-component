@@ -41,6 +41,11 @@ section {
   width: 85%;
 }
 
+.hidden {
+  display: none;
+}
+
+/* section rating-state */
 .circle {
   display: flex;
   justify-content: center;
@@ -109,6 +114,33 @@ button:hover {
   cursor: pointer;
 }
 
+/* section thankYou-state */
+.thankYou-state {
+  display: grid;
+  place-items: center;
+  gap: 28px;
+  text-align: center;
+}
+
+.thankYou-state img {
+  width: 146px;
+}
+
+.thankYou__top__text {
+  width: 170px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: var(--primary-color);
+  background-color: var(--medium-color);
+}
+
+.thanksContainer h2 {
+  margin-bottom: 10px;
+}
+
+/* footer */
 .attribution {
   position: absolute;
   bottom: 0;
@@ -122,12 +154,13 @@ button:hover {
   color: var(--primary-color);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) {
   main {
     height: 416px;
     border-radius: 24px;
   }
 
+  /* section rating-state */
   .circle {
     width: 48px;
     height: 48px;
@@ -152,6 +185,24 @@ button:hover {
 
   .rating-state__bottom {
     gap: 32px;
+    max-width: 340px;
+  }
+
+  /* section thankYou-state */
+  .thankYou-state {
+    gap: 32px;
+  }
+
+  .thankYou-state img {
+    width: 162px;
+  }
+
+  .thankYou__top__text {
+    width: 190px;
+    font-size: 15px;
+  }
+
+  .thanksContainer {
     max-width: 340px;
   }
 }

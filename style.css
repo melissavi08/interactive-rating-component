@@ -41,24 +41,24 @@ section {
   width: 85%;
 }
 
-.hidden {
-  display: none;
+/* section rating-state */
+
+.rating-state__top {
+  display: grid;
+  gap: 20px;
 }
 
-/* section rating-state */
 .circle {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: var(--medium-color);
 }
 
-.rating-state__top {
-  display: grid;
-  gap: 20px;
+.img-container {
+  align-items: center;
 }
 
 .rating-state__top-text {
@@ -87,6 +87,7 @@ p {
 }
 
 .rating {
+  padding: 12px;
   color: var(--light-color);
 }
 
@@ -94,6 +95,11 @@ p {
   color: var(--very-light-color);
   background-color: var(--primary-color);
   cursor: pointer;
+}
+
+.checked {
+  color: var(--very-light-color);
+  background-color: var(--light-color);
 }
 
 button {
@@ -140,6 +146,10 @@ button:hover {
   margin-bottom: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* footer */
 .attribution {
   position: absolute;
@@ -181,6 +191,10 @@ button:hover {
   p {
     font-size: 15px;
     line-height: 24px;
+  }
+
+  .rating {
+    padding: 15px;
   }
 
   .rating-state__bottom {
